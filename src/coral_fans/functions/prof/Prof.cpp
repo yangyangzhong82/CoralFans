@@ -131,7 +131,6 @@ void Profiler::print() const {
         rst = this->printPendingTicks();
         break;
     }
-    TextPacket::createRawMessage(rst).sendToClients();
     coral_fans::mod().getLogger().info(rst);
 }
 
